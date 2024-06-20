@@ -1,0 +1,6 @@
+[2024-06-20T10:34:32.147] [DEBUG] [localhost] [docId] [userId] nodeJS - expireDoc connections.length = 0
+[2024-06-20T10:34:32.286] [INFO] [localhost] [docId] [userId] nodeJS - checkDocumentExpire start
+[2024-06-20T10:34:32.287] [INFO] [localhost] [docId] [userId] nodeJS - checkDocumentExpire end: startSaveCount = 0, removedCount = 0
+[2024-06-20T10:34:32.314] [INFO] [localhost] [docId] [userId] nodeJS - forceSaveTimeout start
+[2024-06-20T10:34:32.316] [INFO] [localhost] [docId] [userId] nodeJS - forceSaveTimeout end
+
