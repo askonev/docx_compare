@@ -2,13 +2,13 @@ import requests
 import json
 
 # URL to send the POST request to
-serve = "161.35.214.46"
+serve = "46.101.242.212"
 url = f"http://{serve}/docbuilder"
 
 # Data to send in the POST request
 data = {
     "async": False,
-    "url": f"http://{serve}:9090/db_scripts/CDE/test_jpeg_compare.js",
+    "url": f"http://{serve}:9090/db_scripts/CDE/jpeg_compare.js",
     "argument": {"key": "string"}
 }
 
@@ -18,9 +18,10 @@ print(data)
 response = requests.post(url, json=data)
 
 res_json = json.loads(response.text)
+print(res_json)
 
 # Path where you want to save the downloaded file
-local_filename = 'Result.docx'
+local_filename = 'result.docx'
 
 # Send a GET request to the URL
 response = requests.get(res_json['urls'][local_filename], stream=True)
